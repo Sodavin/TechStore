@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/logoicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous">
+    <title>Tech Store | Contact</title>
+    <style>
+        body {
+            min-height: 100vh;
+        }
+        #contact-details {
+            display: flex;
+            margin: 40px 100px;
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+        }
+        .detail {
+            justify-content: center;
+        }
+        .detail span,
+        #form-detail form span {
+            color: #777;
+            font-size: 14px;
+        }
+        .detail h2 ,
+        #form-detail form h2{
+            margin: 10px 0;
+        }
+        .detail li {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .detail li p {
+            padding: 10px;
+        }
+        .map {
+            text-align: center;
+            width: 100%;
+            
+        }
+        .map iframe {
+            border-radius: 10px;
+            width: 100%;
+        }
+        #form-detail {
+            margin:  40px 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        #form-detail form{
+            width: 65%;
+            display: flex;
+            flex-direction: column;
+            padding-top: 20px;
+            margin-left: 5px;
+        }
+        #form-detail form input {
+            width: 100%;
+            margin-bottom: 5px;
+            padding: 12px 15px;
+        }
+        #form-detail form textarea {
+            width: 100%;
+            padding: 12px 15px;
+        }
+        .submit-btn {
+            width: 30%;
+            align-self: self-end;
+            margin-top: 15px;
+            padding: 12px 15px;
+            background-color: #6c91ac;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 7px;
+            transition: 0.7s ease;
+        }
+        .submit-btn:hover {
+            background: #2e3d48;
+        }
+        .member {
+            margin-left: 100px;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #ccc;
+            border-radius: 50px;
+        }
+        .member div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .member div p {
+            margin-top: 10px;
+            font-size: 12px;
+            line-height: 1.6;
+            padding-left: 10px;
+            color: #777;
+        }
+        .member div p span {
+            font-weight: 600;
+            font-size: 16px;
+        }
+        .member img {
+            width: 30%;
+            border-radius: 70px;
+        }
+        @media (max-width: 800px) {
+            body {
+                display: flex;
+                flex-direction: column;
+            }
+            #contact-details, #form-detail {
+                flex-direction: column;
+                margin: 10px;
+            }
+            #form-detail  {
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto;
+                width: 100%;
+            }
+            #form-detail form {
+                padding-top: 50px;
+            }
+            .member {
+                margin-left: 0px;
+                margin-top: 20px;
+            }
+            .map iframe {
+                width: 500px;
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="header">
+        <a href="index.html">
+            <img src="images/logo.png" class="logo" alt="Tech Store" width="100px" height="55px">
+        </a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-bag-shopping" style="color:white;"></i></a></li>
+                <a href="" id="close"><i class="fa fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping" style="color: black;"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+    <section id="contact-details">
+        <div class="col-2">
+            <div class="detail">
+                <span>GET IN TOUCH</span>
+                <h2>Visit one of our stores or contact us today</h2>
+                <h3>Head Office</h3>
+                <div>
+                    <li>
+                        <i class="fa-solid fa-map"></i>
+                        <p>#Address: No 145, St.608 Corner St.313, Sangkat Boeng Kork II, Khan Toul Kork, Phnom Penh, Cambodia </p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>techstore@example.com</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-mobile"></i>
+                        <p>techstore@example.com</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-clock"></i>
+                        <p>Monday to Saturday: 8am to 8pm</p>
+                    </li>
+                </div>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15634.900329787313!2d104.87018818715815!3d11.571555300000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109519e617fd2ad%3A0xf2d7ba03bf4d9285!2sWestern%20University%20Main%20Campus!5e0!3m2!1sen!2skh!4v1765718085363!5m2!1sen!2skh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+    
+    <section id="form-detail">
+        <form action="">
+            <span>LEAVE A MESSAGE</span>
+            <h2>We love to hear from you</h2>
+            <input type="text" placeholder="Your Name">
+            <input type="text" placeholder="Email Address">
+            <input type="text" placeholder="Topic">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <button class="submit-btn" style="border: none;">Submit</button>
+        </form>
+        <div class="member">
+            <div>
+                <img src="images/member/1.jpg" alt="">
+                <p><span>Yan Vanthorn</span><br> Senior Marketing Mananger <br> Phone: 012 345 678 <br> Email: yanvanthorn@example.com</p>
+            </div>
+            <div>
+                <img src="images/member/2.jpg" alt="">
+                <p><span>Rann Tepitou</span><br> Customer Service <br> Phone: 012 345 678 <br> Email: ranntepitou@example.com</p>
+            </div>
+            <div>
+                <img src="images/member/3.jpg" alt="">
+                <p><span>Chang Meyhor</span><br> Customer Service <br> Phone: 012 345 678 <br> Email: changmeyhor@example.com</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App For Android and ios Mobile Phone.</p>
+                    <div class="app-logo">
+                        <img src="images/googleplay.jpg">
+                        <img src="images/appstore.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logoicon-1.png" style="border-radius: 10px;">
+                    <p>Providing Trusted Technology, Great Value, and Seamless Service for Every Customer.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li>012 345 678</li>
+                        <li>012 345 678</li>
+                        <li>012 345 678</li>
+                        <li>012 345 678</li>
+                        <li>012 345 678</li>
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Tik Tok</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

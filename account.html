@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/logoicon.png">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous">
+    <title>Tech Store | Account</title>
+    <style>
+        body {
+            background: radial-gradient(white,#b3c6d4);
+            justify-content: center;
+            align-items: center;
+        }
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 90px;
+            margin-bottom: 90px;
+            padding: 20px;
+            position: relative;
+            width: 400px;
+            height: auto;
+            background: transparent;
+            border: 2px solid rgba(255,255,255,0.5);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 30px rgba(0,0,0,0.5);
+            overflow: hidden;
+            transition: 0.2s ease;
+            max-height: none;
+            flex-grow: 0;
+            align-self: center;
+        }
+        .wrapper.active {
+            height: 520px;
+        }
+    </style>
+</head>
+<body>
+    <section class="header">
+        <a href="index.html">
+            <img src="images/logo.png" class="logo" alt="Tech Store" width="100px" height="55px">
+        </a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a class="active" href="account.html">Account</a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-bag-shopping" style="color:white;"></i></a></li>
+                <a href="" id="close"><i class="fa fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping" style="color: black;"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+    <div class="wrapper">
+        <!-- <span class="icon-close">
+            <ion-icon name="close-outline"></ion-icon>
+        </span> -->
+        <div class="form-box login">
+            <h2>Log In</h2>
+            <form action="#">
+                <div class="input-box" id="login-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input id="email" type="email" name="email" autocomplete="email" placeholder="" required/>
+                    <label for="email">Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input id="password" type="password" name="password" autocomplete="current-password" placeholder="" />
+                    <label for="password">Password</label>
+                </div>
+                <div class="remember-forget">
+                    <label for="#"><input type="checkbox">Remember me</label>
+                    <a href="#">Forgot password?</a>
+                </div>
+                <button type="submit" class="btns" id="btn-login">Login</button>
+                <div class="login-register">
+                    <p>Don't have an account? <a href="#" class="register-link"> Register</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-box register" id="register-box">
+            <h2>Register</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input id="email" type="text" name="email" autocomplete="email" placeholder="" required/>
+                    <label for="username">Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input id="email" type="email" name="email" autocomplete="email" placeholder="" required/>
+                    <label for="email">Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input id="password" type="password" name="password" autocomplete="current-password" placeholder="" />
+                    <label for="password">Password</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input id="password" type="password" name="password" autocomplete="current-password" placeholder="" />
+                    <label for="password">Confirm Password</label>
+                </div>
+                <div class="remember-forget">
+                    <label for="#"><input type="checkbox">I agree to the terms & conditions</label>
+                </div>
+                <button type="submit" class="btns" id="btn-register">Register</button>
+                <div class="login-register">
+                    <p>Already have an account? <a href="#" class="login-link"> Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App For Android and ios Mobile Phone.</p>
+                    <div class="app-logo">
+                        <img src="images/googleplay.jpg">
+                        <img src="images/appstore.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logoicon-1.png" style="border-radius: 10px;">
+                    <p>Providing Trusted Technology, Great Value, and Seamless Service for Every Customer.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li>012 345 678</li>
+                        <li>012 345 678</li>
+                        <li>012 345 678</li>
+                        <li>012 345 678</li>
+                        <li>012 345 678</li>
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Tik Tok</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        const wrapper = document.querySelector('.wrapper');
+        const loginlink = document.querySelector('.login-link');
+        const registerlink = document.querySelector('.register-link');
+
+        registerlink.addEventListener('click', ()=> {
+            wrapper.classList.add('active');
+        })
+
+        loginlink.addEventListener('click', ()=> {
+            wrapper.classList.remove('active');
+        })
+    </script>
+
+    <script>
+      function toggleForm() {
+        const login = document.getElementById("login-box");
+        const register = document.getElementById("register-box");
+
+        login.style.display =
+          login.style.display === "none" ? "block" : "none";
+        login.style.display =
+          login.style.display === "block" ? "none" : "block";
+      }
+    </script>
+
+    <script>
+      const btnSignin = document.getElementById("btn-login");
+
+      btnSignin.addEventListener("click", () => {
+        btnSignin.innerText = "Loading...";
+        btnSignin.disabled = true;
+
+        setTimeout(() => {
+          btnSignin.innerText = "Done";
+          setTimeout(() => {
+            btnSignin.innerText = "Sign In";
+            btnSignin.disabled = false;
+          }, 1000);
+        }, 2000);
+      });
+    </script>
+
+    <script>
+      const btnSignup = document.getElementById("btn-register");
+
+      btnSignup.addEventListener("click", () => {
+        btnSignup.innerText = "Loading...";
+        btnSignup.disabled = true;
+
+        setTimeout(() => {
+          btnSignup.innerText = "Done";
+          setTimeout(() => {
+            btnSignup.innerText = "Register";
+            btnSignup.disabled = false;
+          }, 1000);
+        }, 2000);
+      });
+    </script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const fields = document.querySelectorAll('.input-field');
+
+        function updateFieldState(wrapper) {
+        const input = wrapper.querySelector('input');
+        if (!input) return;
+        
+        if (input.value.trim() !== '') wrapper.classList.add('has-value');
+        else wrapper.classList.remove('has-value');
+        }
+
+        fields.forEach(wrapper => {
+        const input = wrapper.querySelector('input');
+        if (!input) return;
+
+        updateFieldState(wrapper);
+
+        input.addEventListener('input', () => updateFieldState(wrapper));
+        input.addEventListener('change', () => updateFieldState(wrapper));
+
+        // handle autofill that some browsers do after load — a short timeout helps
+        window.setTimeout(() => updateFieldState(wrapper), 200);
+        });
+    });
+    </script>
+
+    <script src="script.js" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
